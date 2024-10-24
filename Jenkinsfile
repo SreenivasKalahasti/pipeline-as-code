@@ -12,7 +12,7 @@ stage('Environment Analysis') {
                    }
                 stage('Display Date'){
                         steps{ 
-                                powershell("echo $((Get-Date).ToString())")
+                               echo "TimeStamp:${CurrentBuild.StartTimeInMillis}"
                              }
                    }
                 }
