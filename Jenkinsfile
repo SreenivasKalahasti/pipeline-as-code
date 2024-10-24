@@ -1,5 +1,4 @@
 stage('Environment Analysis') {
-         parallel {
                 stage('Print All Global Variables'){
                         steps{ 
                                 powershell(". get-childitem env:*") 
@@ -10,5 +9,4 @@ stage('Environment Analysis') {
                                 powershell("echo Pipeline Test")
                              }
                    }
-                }
 }
