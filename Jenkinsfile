@@ -7,12 +7,12 @@ stage('Environment Analysis') {
                    }
                 stage('Execute Shell'){
                         steps{ 
-                                powershell("echo "Pipeline Test")
+                                powershell("echo Pipeline Test")
                              }
                    }
                 stage('Display Date'){
                         steps{ 
-                                powershell("echo "Date and time is: $((Get-Date).ToString())"")
+                                powershell("echo $((Get-Date).ToString())")
                              }
                    }
                 }
